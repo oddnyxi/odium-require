@@ -1,0 +1,73 @@
+{
+  "name": "Odium Registry",
+  "description": "Default OdiumRequire registry. Packages are browser (UMD/IIFE/CommonJS) builds pinned to exact versions on jsDelivr; scripts live next to this file.",
+  "homepage": "https://github.com/oddnyxi/odium-require",
+  "packages": {
+    "odium-ui": {
+      "url": "https://raw.githubusercontent.com/oddnyxi/odium-ui/main/dist/odium-ui.js",
+      "global": "OdiumUI",
+      "category": "UI",
+      "description": "Shadow-DOM window toolkit for userscripts",
+      "homepage": "https://github.com/oddnyxi/odium-ui"
+    },
+
+    "lodash": { "url": "npm:lodash@4.18.1/lodash.min.js", "version": "4.18.1", "global": "_", "category": "Utility", "description": "Utility belt for arrays, objects, strings", "homepage": "https://lodash.com" },
+    "dayjs": { "url": "npm:dayjs@1.11.23/dayjs.min.js", "version": "1.11.23", "global": "dayjs", "category": "Utility", "description": "Tiny date parsing & formatting", "homepage": "https://day.js.org" },
+    "mitt": { "url": "npm:mitt@3.0.1/dist/mitt.umd.js", "version": "3.0.1", "global": "mitt", "category": "Utility", "description": "200-byte event emitter", "homepage": "https://github.com/developit/mitt" },
+    "rxjs": { "url": "npm:rxjs@7.8.2/dist/bundles/rxjs.umd.min.js", "version": "7.8.2", "global": "rxjs", "category": "Utility", "description": "Reactive streams / observables", "homepage": "https://rxjs.dev" },
+    "mathjs": { "url": "npm:mathjs@15.2.0/lib/browser/math.js", "version": "15.2.0", "global": "math", "category": "Utility", "description": "Expression parser, units, matrices", "homepage": "https://mathjs.org" },
+    "fuse.js": { "url": "npm:fuse.js@7.2.0/dist/fuse.min.js", "version": "7.2.0", "global": "Fuse", "category": "Utility", "description": "Fuzzy search over lists", "homepage": "https://fusejs.io" },
+    "diff": { "url": "npm:diff@9.0.0/dist/diff.min.js", "version": "9.0.0", "global": "Diff", "category": "Utility", "description": "Text diffs (lines, words, chars)", "homepage": "https://github.com/kpdecker/jsdiff" },
+    "tinycolor": { "url": "npm:tinycolor2@1.6.0/dist/tinycolor-min.js", "version": "1.6.0", "global": "tinycolor", "category": "Utility", "description": "Parse, convert and tweak colors", "homepage": "https://github.com/bgrins/TinyColor" },
+
+    "axios": { "url": "npm:axios@1.20.0/dist/axios.min.js", "version": "1.20.0", "global": "axios", "category": "Data & Network", "description": "Promise-based HTTP client", "homepage": "https://axios-http.com" },
+    "papaparse": { "url": "npm:papaparse@5.7.0/papaparse.min.js", "version": "5.7.0", "global": "Papa", "category": "Data & Network", "description": "Fast CSV parser and writer", "homepage": "https://www.papaparse.com" },
+    "js-yaml": { "url": "npm:js-yaml@5.5.0/dist/browser/js-yaml.umd.min.js", "version": "5.5.0", "global": "jsyaml", "category": "Data & Network", "description": "YAML parse / dump", "homepage": "https://github.com/nodeca/js-yaml" },
+    "localforage": { "url": "npm:localforage@1.10.0/dist/localforage.min.js", "version": "1.10.0", "global": "localforage", "category": "Data & Network", "description": "Async key-value storage on IndexedDB", "homepage": "https://localforage.github.io/localForage" },
+    "js-cookie": { "url": "npm:js-cookie@3.0.8/dist/js.cookie.min.js", "version": "3.0.8", "global": "Cookies", "category": "Data & Network", "description": "Read and write cookies", "homepage": "https://github.com/js-cookie/js-cookie" },
+    "lz-string": { "url": "npm:lz-string@1.5.0/libs/lz-string.min.js", "version": "1.5.0", "global": "LZString", "category": "Data & Network", "description": "String compression for storage / URLs", "homepage": "https://pieroxy.net/blog/pages/lz-string" },
+
+    "marked": { "url": "npm:marked@18.0.14/lib/marked.umd.js", "version": "18.0.14", "global": "marked", "category": "Text & Markdown", "description": "Markdown to HTML", "homepage": "https://marked.js.org" },
+    "turndown": { "url": "npm:turndown@7.2.4/dist/turndown.js", "version": "7.2.4", "global": "TurndownService", "category": "Text & Markdown", "description": "HTML to Markdown", "homepage": "https://github.com/mixmark-io/turndown" },
+    "dompurify": { "url": "npm:dompurify@3.4.14/dist/purify.min.js", "version": "3.4.14", "global": "DOMPurify", "category": "Text & Markdown", "description": "Sanitize untrusted HTML", "homepage": "https://github.com/cure53/DOMPurify" },
+    "readability": { "url": "npm:@mozilla/readability@0.6.0/Readability.js", "version": "0.6.0", "global": "Readability", "category": "Text & Markdown", "description": "Firefox Reader View article extraction", "homepage": "https://github.com/mozilla/readability" },
+    "highlight.js": { "url": "npm:@highlightjs/cdn-assets@11.12.0/highlight.min.js", "version": "11.12.0", "global": "hljs", "css": "npm:@highlightjs/cdn-assets@11.12.0/styles/github-dark.min.css", "category": "Text & Markdown", "description": "Syntax highlighting, 190+ languages", "homepage": "https://highlightjs.org" },
+    "mark.js": { "url": "npm:mark.js@8.11.1/dist/mark.min.js", "version": "8.11.1", "global": "Mark", "category": "Text & Markdown", "description": "Highlight search terms in the page", "homepage": "https://markjs.io" },
+
+    "jszip": { "url": "npm:jszip@3.10.2/dist/jszip.min.js", "version": "3.10.2", "global": "JSZip", "category": "Files", "description": "Create and read .zip files", "homepage": "https://stuk.github.io/jszip" },
+    "file-saver": { "url": "npm:file-saver@2.0.5/dist/FileSaver.min.js", "version": "2.0.5", "global": "saveAs", "category": "Files", "description": "saveAs(blob, name) downloads", "homepage": "https://github.com/eligrey/FileSaver.js" },
+    "pdf-lib": { "url": "npm:pdf-lib@1.17.1/dist/pdf-lib.min.js", "version": "1.17.1", "global": "PDFLib", "category": "Files", "description": "Create and edit PDFs", "homepage": "https://pdf-lib.js.org" },
+    "jspdf": { "url": "npm:jspdf@4.2.1/dist/jspdf.umd.min.js", "version": "4.2.1", "global": "jspdf", "category": "Files", "description": "Generate PDFs (use .jsPDF)", "homepage": "https://github.com/parallax/jsPDF" },
+    "html2canvas": { "url": "npm:html2canvas@1.4.1/dist/html2canvas.min.js", "version": "1.4.1", "global": "html2canvas", "category": "Files", "description": "Render DOM to a canvas / screenshot", "homepage": "https://html2canvas.hertzen.com" },
+    "pako": { "url": "npm:pako@3.0.2/dist/browser/pako.umd.min.js", "version": "3.0.2", "global": "pako", "category": "Files", "description": "zlib / gzip deflate & inflate", "homepage": "https://github.com/nodeca/pako" },
+
+    "crypto-js": { "url": "npm:crypto-js@4.2.0/crypto-js.js", "version": "4.2.0", "global": "CryptoJS", "category": "Crypto & Hashing", "description": "AES, SHA, HMAC, encoders", "homepage": "https://github.com/brix/crypto-js" },
+    "spark-md5": { "url": "npm:spark-md5@3.0.2/spark-md5.min.js", "version": "3.0.2", "global": "SparkMD5", "category": "Crypto & Hashing", "description": "Fast incremental MD5", "homepage": "https://github.com/satazor/js-spark-md5" },
+
+    "jquery": { "url": "npm:jquery@4.0.0/dist/jquery.min.js", "version": "4.0.0", "global": "jQuery", "category": "DOM & UI", "description": "Classic DOM toolkit ($)", "homepage": "https://jquery.com" },
+    "sweetalert2": { "url": "npm:sweetalert2@11.26.25/dist/sweetalert2.all.min.js", "version": "11.26.25", "global": "Swal", "category": "DOM & UI", "description": "Nice alert / confirm / prompt dialogs", "homepage": "https://sweetalert2.github.io" },
+    "sortablejs": { "url": "npm:sortablejs@1.15.7/Sortable.min.js", "version": "1.15.7", "global": "Sortable", "category": "DOM & UI", "description": "Drag-and-drop reorderable lists", "homepage": "https://sortablejs.github.io/Sortable" },
+    "hotkeys-js": { "url": "npm:hotkeys-js@4.0.8/dist/hotkeys-js.min.js", "version": "4.0.8", "global": "hotkeys", "category": "DOM & UI", "description": "Keyboard shortcut binding", "homepage": "https://github.com/jaywcjlove/hotkeys-js" },
+    "chart.js": { "url": "npm:chart.js@4.5.1/dist/chart.umd.js", "version": "4.5.1", "global": "Chart", "category": "DOM & UI", "description": "Canvas charts", "homepage": "https://www.chartjs.org" },
+    "darkreader": { "url": "npm:darkreader@4.9.133/darkreader.js", "version": "4.9.133", "global": "DarkReader", "category": "DOM & UI", "description": "Dark mode engine for any page", "homepage": "https://darkreader.org" },
+    "qrcode": { "url": "npm:qrcode-generator@2.0.4/dist/qrcode.js", "version": "2.0.4", "global": "qrcode", "category": "DOM & UI", "description": "QR codes as SVG / GIF", "homepage": "https://github.com/kazuhikoarase/qrcode-generator" },
+
+    "gsap": { "url": "npm:gsap@3.15.0/dist/gsap.min.js", "version": "3.15.0", "global": "gsap", "category": "Animation", "description": "Pro-grade animation engine", "homepage": "https://gsap.com" },
+    "animejs": { "url": "npm:animejs@4.5.0/dist/bundles/anime.umd.min.js", "version": "4.5.0", "global": "anime", "category": "Animation", "description": "Lightweight animation library", "homepage": "https://animejs.com" },
+    "canvas-confetti": { "url": "npm:canvas-confetti@1.9.4/dist/confetti.browser.js", "version": "1.9.4", "global": "confetti", "category": "Animation", "description": "confetti() 🎉", "homepage": "https://github.com/catdad/canvas-confetti" }
+  },
+
+  "scripts": {
+    "dark-mode": { "url": "scripts/dark-mode.js", "title": "Dark Mode", "icon": "eye", "requires": ["darkreader"], "category": "Reading", "description": "Dark theme for every site, per-site off switch" },
+    "reader-mode": { "url": "scripts/reader-mode.js", "title": "Reader View", "icon": "layout", "requires": ["readability", "dompurify"], "category": "Reading", "description": "Clean article view (Alt+Shift+R)" },
+    "unstick": { "url": "scripts/unstick.js", "title": "Unstick", "icon": "eraser", "category": "Reading", "description": "Kill sticky headers, modals, scroll locks (Alt+Shift+K)" },
+    "unlock-page": { "url": "scripts/unlock-page.js", "title": "Unlock Page", "icon": "check", "category": "Page Tools", "description": "Re-enable right-click, select and copy" },
+    "edit-page": { "url": "scripts/edit-page.js", "title": "Edit Page", "icon": "edit", "category": "Page Tools", "description": "Make any page editable (Alt+Shift+E)" },
+    "markdown-copy": { "url": "scripts/markdown-copy.js", "title": "Markdown Copy", "icon": "copy", "requires": ["turndown", "readability"], "category": "Page Tools", "description": "Copy selection / article as Markdown (Alt+Shift+M)" },
+    "link-extractor": { "url": "scripts/link-extractor.js", "title": "Links", "icon": "list", "category": "Page Tools", "description": "Every link, filter, copy, CSV" },
+    "image-grabber": { "url": "scripts/image-grabber.js", "title": "Images", "icon": "download", "requires": ["jszip"], "category": "Media", "description": "List all images, download as ZIP" },
+    "media-control": { "url": "scripts/media-control.js", "title": "Media Speed", "icon": "sliders", "category": "Media", "description": "Video speed (Alt+[ / Alt+]), PiP, loop" },
+    "screenshot": { "url": "scripts/screenshot.js", "title": "Screenshot", "icon": "monitor", "requires": ["html2canvas"], "category": "Media", "description": "Save visible area or full page as PNG (Alt+Shift+S)" },
+    "qr-share": { "url": "scripts/qr-share.js", "title": "QR Share", "icon": "grid", "requires": ["qrcode"], "category": "Media", "description": "QR code of this page or any text (Alt+Shift+Q)" }
+  }
+}
